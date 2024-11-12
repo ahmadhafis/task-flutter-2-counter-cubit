@@ -22,7 +22,7 @@ class CounterView extends StatelessWidget {
                 style: const TextStyle(fontSize: 16),
               ),
               backgroundColor: Colors.green,
-              duration: const Duration(seconds: 1),
+              duration: const Duration(seconds: 5),
             ),
           );
         }
@@ -37,7 +37,7 @@ class CounterView extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: state.isMultipleOfFive
                   ? const LinearGradient(
-                      colors: [Colors.purple, Colors.blue],
+                      colors: [Colors.green, Colors.blue],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     )
@@ -60,7 +60,7 @@ class CounterView extends StatelessWidget {
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
                       color: state.isMultipleOfFive
-                          ? Colors.amber
+                          ? Colors.orange
                           : Colors.blue.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(15),
                       boxShadow: state.isMultipleOfFive
@@ -78,8 +78,9 @@ class CounterView extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 48,
                         fontWeight: FontWeight.bold,
-                        color:
-                            state.isMultipleOfFive ? Colors.red : Colors.black,
+                        color: state.isMultipleOfFive
+                            ? Colors.white
+                            : Colors.black,
                       ),
                     ),
                   ),
@@ -114,7 +115,7 @@ class CounterView extends StatelessWidget {
                         icon: const Icon(Icons.exposure_minus_2),
                         label: const Text('Decrease by 2'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.red,
+                          backgroundColor: Colors.lime,
                           foregroundColor: Colors.white,
                         ),
                       ),
@@ -124,7 +125,7 @@ class CounterView extends StatelessWidget {
                         icon: const Icon(Icons.close),
                         label: const Text('Multiply by 2'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.purple,
+                          backgroundColor: Colors.teal,
                           foregroundColor: Colors.white,
                         ),
                       ),
