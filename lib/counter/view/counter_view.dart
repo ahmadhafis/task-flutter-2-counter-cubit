@@ -22,7 +22,7 @@ class CounterView extends StatelessWidget {
                 style: const TextStyle(fontSize: 16),
               ),
               backgroundColor: Colors.green,
-              duration: const Duration(seconds: 5),
+              duration: const Duration(seconds: 1),
             ),
           );
         }
